@@ -1,0 +1,33 @@
+header {
+    display: block;
+    margin-top: 20px;
+    background-color: pink;
+}
+
+.navbar {
+    /* dont worry abt how the words look, will replace w icons */
+    list-style-type: none;
+    text-align: horizontal;
+    /* position: sticky; only works w ul (??) */
+    top: 0;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+}
+
+.main-video {
+    background-color: aquamarine;
+    /* special section for the video so i can set size */
+}
+
+.description {
+    background-color: coral;
+}
+
+.comments {
+    background-color: darkgray;
+}
+
+.sidebar {
+    background-color: cornflowerblue;
+}
