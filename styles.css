@@ -2,6 +2,7 @@ header {
     display: block;
     margin-top: 20px;
     background-color: pink;
+    width: 100%
 }
 
 .navbar {
@@ -13,21 +14,31 @@ header {
     width: 100vw;
     padding: 10px;
     display: flex;
+    width: 70%;
+
 }
 
 .main-video {
     background-color: aquamarine;
     /* special section for the video so i can set size */
+    width: 70%;
+
 }
 
 .description {
     background-color: coral;
+    width: 70%;
 }
 
 .comments {
     background-color: darkgray;
+    width: 70%;
 }
 
 .sidebar {
     background-color: cornflowerblue;
+    border: right;
+    float: right;
+    width: 30%;
+    margin: 0;
 }
