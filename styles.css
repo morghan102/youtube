@@ -1,22 +1,80 @@
 header {
-    display: block;
+     /* display: block; */
     margin-top: 20px;
     background-color: pink;
-    width: 100%
+    width: 100%;
+    height: 90px;
 }
-
+/* inline-block, block, flex... difference? */
 .navbar {
-    /* dont worry abt how the words look, will replace w icons */
     list-style-type: none;
-    text-align: horizontal;
-    /* position: sticky; only works w ul (??) */
-    top: 0;
+    /* top: 0;  */
     width: 100vw;
-    padding: 10px;
-    display: flex;
-    width: 70%;
-
+    /* padding: 10px; */
+    display: inline-block; 
+    margin: auto;
+    /* width: 70%; */
+    position: absolute;    
+    left: 0;
+    
 }
+
+.navbar img {
+    height: 50px;
+    margin: 5px;
+}
+
+.three-line-icon {
+    top: 0;
+    position: absolute;
+    left: 5%;
+ 
+}
+
+.youtube-logo {
+    top: 0;
+    position: absolute;
+    left: 15%;
+}
+
+.search {
+    top: 0;
+    position: absolute;
+    left: 30%
+}
+
+.camera-icon {
+    top: 0;
+    position: absolute;
+    left: 50%
+}
+
+.google-apps-icon {
+    top: 0;
+    position: absolute;
+    left: 70%
+}
+
+.bell-icon {
+    top: 0;
+    position: absolute;
+    left: 80%
+}
+
+.person-icon {
+    top: 0;
+    position: absolute;
+    left: 90%
+}
+
+/*.google-icons {
+    display: flex;
+    float: right;
+    align-items: right;
+} */
+
+
+
 
 .main-video {
     background-color: aquamarine;
