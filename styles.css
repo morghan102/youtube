@@ -12,10 +12,16 @@ header {
 }
 
 .navbar img {
-    height: 50px;
+    height: 30px;
     /* margin: 5px; */
-
+    margin-left: -10px;
 }
+
+/* .youtube-logo {
+    height: 50px;
+    margin-left: -20px;
+}
+ */
 .camera-icon {
     margin-left: 70px;
 }
@@ -68,8 +74,6 @@ header {
     float: right;
     align-items: right;
 } */
-
-
 
 
 .main-video {
