@@ -1,30 +1,26 @@
 header {
-     /* display: block; */
     margin-top: 20px;
     background-color: pink;
     width: 100%;
-    height: 90px;
+    height: 70px;
 }
 /* inline-block, block, flex... difference? */
+/* block is good for aligning along te 2 axes */
 .navbar {
     list-style-type: none;
-    /* top: 0;  */
-    width: 100vw;
-    /* padding: 10px; */
-    display: inline-block; 
-    margin: auto;
-    /* width: 70%; */
-    position: absolute;    
-    left: 0;
-    
+    display: flex; 
 }
 
 .navbar img {
     height: 50px;
-    margin: 5px;
+    /* margin: 5px; */
+
+}
+.camera-icon {
+    margin-left: 70px;
 }
 
-.three-line-icon {
+/* .three-line-icon {
     top: 0;
     position: absolute;
     left: 5%;
@@ -65,7 +61,7 @@ header {
     top: 0;
     position: absolute;
     left: 90%
-}
+} */
 
 /*.google-icons {
     display: flex;
