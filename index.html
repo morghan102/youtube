@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css">
+        <script src="java.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- not sure if that did anything? -->
@@ -97,21 +98,25 @@
         <div class="grid">
             comments gridded (icon of commenter, date, comment
             likes, "reply")
-            <label for="example">enter txt</label>
-            <input id="example" type="text"
-            name="Ntext" size="20">
-            <input id="sent" type="submit"
-            value="Send">
+            <br>
+            <div class="comment-box">
+            <label for="example"></label>
+            <a class="comm-person-icon" href=#comm-person-icon>
+                    <img src="icons/person-icon.png" alt="icon of user">
+                </a>
+            <input id="example" type="text" name="Ntext" size="20">
+            <!-- <input id="sent" type="submit" value="Send"> -->
             <!-- this works! change id to class...
             add already done comments at end. -->
-            <!-- <section class="specific-comment">
+            </div>
+            <section class="specific-comment">
                     <p>comment</p>
 
             </section>
             <section></section>
             <section></section>
             <section></section>
-            <section></section> -->
+            <section></section>
         </div>
         <!-- <p id="para"></p> I NEED THIS??-->
     </div>

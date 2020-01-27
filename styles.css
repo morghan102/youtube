@@ -99,6 +99,17 @@ This isn't changing the Y logo. Need to add searchbar */
     width: 70%;
 }
 
+.comment-box {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.comment-box img {
+    height: 30px;
+    margin-right: 0%;
+}
+
 .specific-comment {
     border: darkred;
     border-width: 10px;
