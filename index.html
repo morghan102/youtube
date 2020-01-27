@@ -3,6 +3,8 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- not sure if that did anything? -->
         <title>Youtube Example Page</title>
     </head>
 
@@ -38,7 +40,9 @@
         right word?) for the searchbox -->
     </header>
 
+
     <aside class="sidebar">
+        <!-- add links/videos -->
             <div class="grid">
                 <section class="video-thumbnail">
                     <iframe></iframe>
@@ -65,7 +69,7 @@
     
 
    <section class="main-video">
-        <video controls autoplay>
+        <video controls autoplay class="video">
             <source src="" type="">
             <source src="" type="">
             <source src="" type="">
@@ -76,17 +80,41 @@
             to vid</p>
     </section>
 
+
     <section class="description">
-        <h3>TOP logo, "top", subscribers, subscribe button</h3>
+        <ul class="more-logos">
+            <li class="top-logo">top logo</li>
+            <li class="top">"top" (?)</li>
+            <li class="subscribers">subscribers</li>
+            <li><button type="subscribe" class="subscribe-btn"></button></li>
+        </ul> 
         <p>video description</p>
     </section>
+
 
     <section class="comments">
         <h3>#of comments, "sort by"</h3>
         <div class="grid">
             comments gridded (icon of commenter, date, comment
             likes, "reply")
+            <label for="example">enter txt</label>
+            <input id="example" type="text"
+            name="Ntext" size="20">
+            <input id="sent" type="submit"
+            value="Send">
+            <!-- this works! change id to class...
+            add already done comments at end. -->
+            <!-- <section class="specific-comment">
+                    <p>comment</p>
+
+            </section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section> -->
         </div>
+        <!-- <p id="para"></p> I NEED THIS??-->
+    </div>
     </section>
 
 </body>

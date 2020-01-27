@@ -1,96 +1,56 @@
+@media all and (max-width: 359px) and (min-width: 300px) {
+    /* 320px= portrait */
+}
+
+@media all and (max-width: 479px) and (min-width: 360px) {
+    /* 360px= portrait */
+}
+
+@media all and (max-width: 600px) and (min-width: 480px){
+    /* 320px (rotation) = landscape */
+}
+@media all and (max-width: 749px) and (min-width: 601px){
+    /* 360px (rotation) =portrait*/
+}
+@media all and (max-width: 1024px) and (min-width: 979px){
+    /* 768px (rotation)=landscape */
+}
+/* not sure if these do anything? */
+
+
 header {
     margin-top: 20px;
     background-color: pink;
     width: 100%;
-    height: 70px;
+    height: 50px;
 }
 /* inline-block, block, flex... difference? */
 /* block is good for aligning along te 2 axes */
 .navbar {
     list-style-type: none;
     display: flex; 
+    margin-left: -30px;
+    
 }
 
 .navbar img {
     height: 30px;
-    /* margin: 5px; */
-    margin-left: -10px;
-}
-
-/* .youtube-logo {
-    height: 50px;
-    margin-left: -20px;
-}
- */
-.camera-icon {
-    margin-left: 70px;
-}
-
-/* .three-line-icon {
-    top: 0;
-    position: absolute;
-    left: 5%;
- 
+    margin: 10px;
 }
 
 .youtube-logo {
-    top: 0;
-    position: absolute;
-    left: 15%;
+    height: 50px; 
+ } /*need to make youtube and search bar larger.
+This isn't changing the Y logo. Need to add searchbar */
+
+.camera-icon {
+    margin-left: 150px;
 }
 
 .search {
-    top: 0;
-    position: absolute;
-    left: 30%
-}
-
-.camera-icon {
-    top: 0;
-    position: absolute;
-    left: 50%
-}
-
-.google-apps-icon {
-    top: 0;
-    position: absolute;
-    left: 70%
-}
-
-.bell-icon {
-    top: 0;
-    position: absolute;
-    left: 80%
-}
-
-.person-icon {
-    top: 0;
-    position: absolute;
-    left: 90%
-} */
-
-/*.google-icons {
-    display: flex;
-    float: right;
-    align-items: right;
-} */
-
-
-.main-video {
-    background-color: aquamarine;
-    /* special section for the video so i can set size */
-    width: 70%;
-
-}
-
-.description {
-    background-color: coral;
-    width: 70%;
-}
-
-.comments {
-    background-color: darkgray;
-    width: 70%;
+    margin-top: 15px;
+    /* move right a bunch and make bigger
+    not sure how to do that */
 }
 
 .sidebar {
@@ -99,4 +59,47 @@ header {
     float: right;
     width: 30%;
     margin: 0;
+    /* add clickable videos... links
+    size of each grid box? */
+}
+
+.main-video {
+    background-color: aquamarine;
+    /* special section for the video so i can set size */
+    width: 70%;
+}
+
+.video {
+    width: 490px;
+    /* can i make this dynamic? stretch to fit in the screen */
+}
+
+.description {
+    background-color: coral;
+    width: 70%;
+}
+
+.more-logos {
+    list-style-type: none;
+    display: flex; 
+    margin-left: -30px;
+}
+
+.more-logos li {
+    margin-right: 20px;
+/* once the margin is above 30 it gets stacked. NO */
+}
+
+.subscribers {
+    margin-left: 150px;
+}
+
+.comments {
+    background-color: darkgray;
+    width: 70%;
+}
+
+.specific-comment {
+    border: darkred;
+    border-width: 10px;
 }
