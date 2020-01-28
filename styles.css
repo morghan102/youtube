@@ -81,11 +81,19 @@ form.search button {
 .side-description {
     border: 10px;
     width: 100px;
+    position: flex;
+    margin-left: 35%;
     /* fit this as a percentage of gthe sidebar box */
 }
 
+h1 {
+    border-top: 1px solid gray;
+    width: 85%;
+    margin-left: 5%;
+}
+
 .video-thumbnail {
-    /* fit as percentage of sidebar box */
+    width: 60%;
 }
 
 .main-video {
