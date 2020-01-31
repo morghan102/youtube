@@ -17,6 +17,14 @@
 }
 /* not sure if these do anything? */
 
+html {
+    font-size: auto;
+    font: roboto, arial, sans-sarif, noto, YT sans, roboto mono;
+}
+
+p {
+    font-size: .85rem;
+}
 
 header {
     margin-top: 20px;
@@ -74,15 +82,78 @@ form.search button {
     width: 27%;
     margin-bottom: 10px;
     height: 100vw;
-    /* add thumbnails, desciption...
-    why did the blue dissapear??? */
 }
+
+
+/* Autoplay toggleswitch */
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-left: 80%;
+    width: 30px;
+    height: 16px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.slider.round {
+    border-radius: 16px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/* end toggle switch */
+
+
 
 .side-description {
     border: 10px;
     width: 100px;
-    position: flex;
-    margin-left: 35%;
+    position: absolute;
+    margin-left: 16%;
     /* fit this as a percentage of gthe sidebar box */
 }
 
@@ -93,7 +164,8 @@ h1 {
 }
 
 .video-thumbnail {
-    width: 60%;
+    width: 58%;
+    margin-bottom: 5%;
 }
 
 .main-video {
