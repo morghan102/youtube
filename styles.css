@@ -205,6 +205,11 @@ h1 {
 /* says vid is naaliable... bc wifi or something else?? */
 }
 
+.main-video h4 {
+    margin-bottom: -1%;
+}
+
+/* section below main video descript (orange) */
 .video-description {
     background-color: coral;
     width: 70%;
@@ -224,6 +229,9 @@ h1 {
 .subscribers {
     margin-left: 150px;
 }
+/* section below main video descript (orange) */
+
+
 
 .comments {
     background-color: darkgray;
