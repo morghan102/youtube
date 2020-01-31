@@ -191,11 +191,11 @@ h1 {
     width: 58%;
     margin-bottom: 5%;
 }
-/* sidebar */
+/* sidebar end*/
 
 
+/* box w/ video and info */
 .main-video {
-    background-color: aquamarine;
     width: 70%;
 }
 
@@ -206,7 +206,17 @@ h1 {
 }
 
 .main-video h4 {
-    margin-bottom: -1%;
+    margin-bottom: 1.5%;
+}
+
+.main-video p {
+    display: inline;
+}
+
+.lss-icons {
+    margin-top: -15%;
+    margin-left: 40%;
+
 }
 
 /* section below main video descript (orange) */
