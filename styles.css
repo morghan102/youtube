@@ -175,12 +175,17 @@ hr {
 .side-description h5 {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 1rem;
+    width: 9.9rem;
+    margin-left: 7%;
 }
 
 .side-description p {
-    margin-top: 0;
+    margin-top: 5%;
     margin-bottom: 0;
-    font-size: .7rem;
+    font-size: .85rem;
+    margin-left: 7%;
+
 }
 
 h1 {
@@ -209,7 +214,7 @@ h1 {
     width: 70%;
     height: 550px;
     /* overflow: hidden; */
-   background-color: pink;
+   /* background-color: pink; */
    box-sizing: content-box;
    display: flex;
    position: absolute;
@@ -255,6 +260,8 @@ h1 {
     margin-left: 120%;
     width: 125%;
 }
+
+
 /* hr line between vid description and one below */
 .line-below-vid {
     margin-top: 42%;
@@ -269,18 +276,26 @@ h1 {
 
 /* section below main video descript (orange) */
 .video-description {
-    background-color: coral;
+    /* background-color: coral; */
     width: 70%;
     display: flex;
     position: relative;
     margin-top: -4%;
+    font-family: roboto, arial;
+    height: auto;
 }
 
+/* rounds corners of icon for ra */
+.ra-icon {
+    border-radius: 25px;
+}
+
+/* what is this? better name */
 .more-logos {
     list-style-type: none;
     display: flex; 
     
-    margin-left: -30px;
+    /* margin-left: -30px; */
 }
 
 .more-logos li {
@@ -288,14 +303,36 @@ h1 {
 /* once the margin is above 30 it gets stacked. NO */
 }
 
-.subscribers {
-    margin-left: 150px;
+.subscribe-btn {
+    margin-left: 550%;
+    background: rgb(204, 7, 7);
+    width: 7rem;
+    height: 2.5rem;
+    color: white;
+    text-emphasis: bold;
 }
+
+.short-description {
+    display: flex;
+    position: relative;
+    margin-left: -16.9%;
+    top: 35%;
+    font-size: 15px;
+    font-family: roboto, arial;
+}
+
+.show-more {
+    margin-top: 15%;
+    margin-left: -51%;
+    color: dark-gray;
+}
+
 /* section below main video descript (orange) */
 
 
 
 .comments {
+    font-family: roboto, arial;
     display: flex;
     position: relative;
     background-color: darkgray;
