@@ -158,11 +158,11 @@ input:checked + .slider {
 
 /* line between 1st side video */
 hr {
-    display: block;
+    display: flex;
     /* margin-left: .5em;
     margin-right: .5em; */
     margin-bottom: 5%;
-    margin-top: -1%
+    margin-top: -1%;
 }
 
 .side-description {
@@ -209,7 +209,7 @@ h1 {
     width: 70%;
     height: 550px;
     /* overflow: hidden; */
-   /* background-color: pink; */
+   background-color: pink;
    box-sizing: content-box;
    display: flex;
    position: absolute;
@@ -254,8 +254,17 @@ h1 {
     margin-top: 180%;
     margin-left: 120%;
     width: 125%;
+}
+/* hr line between vid description and one below */
+.line-below-vid {
+    margin-top: 42%;
+    display: flex;
+    position: relative;
+    width: 67%;
+    margin-left: 2%;
+/* border-bottom: 0; */
+}
 
-} 
 
 
 /* section below main video descript (orange) */
@@ -263,11 +272,14 @@ h1 {
     background-color: coral;
     width: 70%;
     display: flex;
+    position: relative;
+    margin-top: -4%;
 }
 
 .more-logos {
     list-style-type: none;
     display: flex; 
+    
     margin-left: -30px;
 }
 
@@ -285,7 +297,7 @@ h1 {
 
 .comments {
     display: flex;
-
+    position: relative;
     background-color: darkgray;
     width: 70%;
     /* www.freecodecamp.org/forum/t/how-to-make-a-comment-box-in-html-css-javascript-or-jquery/248111/4 */
