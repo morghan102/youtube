@@ -20,6 +20,7 @@
 html {
     font-size: auto;
     font: roboto, arial, sans-sarif, noto, YT sans, roboto mono;
+    
 }
 
 p {
@@ -52,6 +53,7 @@ header {
  }
 
 .camera-icon {
+    display: flex;
     margin-left: 150px;
 }
 
@@ -193,36 +195,74 @@ h1 {
 }
 /* sidebar end*/
 
+/* div {
+    height: 500px;
+    border-color: black;
+    border-width: 5px;;
+} */
 
 /* box w/ video and info */
 .main-video {
+    /* top: 0;
+    bottom: 0;
+    height: 200%; */
     width: 70%;
+    height: 550px;
+    /* overflow: hidden; */
+   /* background-color: pink; */
+   box-sizing: content-box;
+   display: flex;
+   position: absolute;
 }
 
 .video {
-    width: 490px;
+       position: absolute;
+
+    min-width: 83%;
+    min-height: 83%;
+    width: auto;
+    object-fit: fill;
+    top: 5%;
+    left: 3%;
+    object-fit: cover;
+   /* margin-right: 50%; */
+    /* transform: translate(-50%, -50%); */
     /* can i make this dynamic? stretch to fit in the screen */
 /* says vid is naaliable... bc wifi or something else?? */
 }
 
 .main-video h4 {
-    margin-bottom: 1.5%;
+    /* margin-bottom: 1.5%; */
+    display: flex;
+    position: relative;
+    margin-top: 53%;
+    margin-left: 3%;
+
 }
 
 .main-video p {
-    display: inline;
+    display: flex;
+    margin-left: -34.5%;
+    margin-top: 56%;
+    font-size: .9em;
+    position: relative;
 }
 
 .lss-icons {
-    margin-top: -15%;
-    margin-left: 40%;
+    position: relative;
+    display: flex;
+    margin-top: 180%;
+    margin-left: 120%;
+    width: 125%;
 
-}
+} 
+
 
 /* section below main video descript (orange) */
 .video-description {
     background-color: coral;
     width: 70%;
+    display: flex;
 }
 
 .more-logos {
@@ -244,6 +284,8 @@ h1 {
 
 
 .comments {
+    display: flex;
+
     background-color: darkgray;
     width: 70%;
     /* www.freecodecamp.org/forum/t/how-to-make-a-comment-box-in-html-css-javascript-or-jquery/248111/4 */
