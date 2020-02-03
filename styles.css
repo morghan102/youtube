@@ -20,7 +20,9 @@
 html {
     font-size: auto;
     font: roboto, arial, sans-sarif, noto, YT sans, roboto mono;
-    
+    flex-wrap: wrap;
+    margin: 0;
+    display: flex;
 }
 
 p {
@@ -38,7 +40,10 @@ header {
 .navbar {
     list-style-type: none;
     display: flex; 
+    justify-content: space-between;
     margin-left: -30px;
+    box-sizing: border-box;
+
 }
 
 .navbar img {
@@ -75,10 +80,22 @@ form.search button {
 }
 
 /* sidebar */
+
+.side-box {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
 .sidebar {
     /* background-color: cornflowerblue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
     border: right;
-    float: right;
+    /* float: right; */
     width: 28%;
     margin-bottom: 10px;
     height: 100%;
@@ -87,19 +104,24 @@ form.search button {
 .autoplay {
     position: relative;
     /* display: inline-block; */
-    margin-left: 40%;
-    margin-top: -13.77%;
+    margin-left: 10em;
+    margin-top: -2.55em;
 
 }
+
+.up-next {
+    font-size: 17px;
+}
+
 
 /* Autoplay toggleswitch */
 .switch {
     position: absolute;
     display: inline-block;
-    margin-left: 22%;
+    margin-left: 18%;
     width: 30px;
     height: 16px;
-    margin-top: -3.77%;
+    margin-top: -1.5em;
 }
 
 .switch input {
@@ -165,6 +187,8 @@ hr {
 }
 
 .side-description {
+    box-sizing: border-box;
+
     border: 10px;
     width: 100px;
     position: absolute;
@@ -204,65 +228,93 @@ h1 {
     border-width: 5px;;
 } */
 
+
+
+
+
+
+
+
 /* box w/ video and info */
 .main-video {
-    /* top: 0;
-    bottom: 0;
+     margin-top: -79.65%;
+   /* bottom: 0;
     height: 200%; */
-    width: 70%;
-    height: 550px;
+     width: 70%;
+    /* height: 80%; */
     /* overflow: hidden; */
-   background-color: pink;
-   box-sizing: content-box;
+   /* background-color: pink; */
+   /* box-sizing: border-box; */
    display: flex;
-   position: absolute;
+   /* flex-direction: row; */
+   justify-content: space-between;
+   align-items: top;
+   flex-wrap: wrap;
+   /* position: absolute; */
 }
 
-.video {
-       position: absolute;
+ .video {
     display: flex;
+    /* justify-content: space-between; */
+    /* background-color: blueviolet; */
+      /* position: absolute; */
+    /* display: flex; */
     min-width: 83%;
-    min-height: 83%;
-    width: auto;
-    object-fit: fill;
-    top: 5%;
-    left: 3%;
-    object-fit: cover;
+    min-height: 400px;
+    /* width: auto; */
+    /* object-fit: fill; */
+   margin-top: 5%;
+    margin-left: 3%;
+    /* object-fit: cover; */
    /* margin-right: 50%; */
     /* transform: translate(-50%, -50%); */
     /* can i make this dynamic? stretch to fit in the screen */
 /* says vid is naaliable... bc wifi or something else?? */
 }
 
-.main-video h4 {
-    /* margin-bottom: 1.5%; */
-    display: flex;
+.info {
+/* .main-video h4 { */
+    margin-bottom: 1.5%;
+    margin-left: 2.9%;
+    /* display: flex;
     position: relative;
     margin-top: 5em;
-    margin-left: 1em;
-
-}
-
-.main-video p {
+    margin-left: 1em;*/
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* background-color: cyan; */
+} 
+
+/* .info h4 {
+    background-color: darkolivegreen;
+} */
+ .info p {
+    /* background-color: red; */
+    margin-left: -65.1%;
+    margin-top: 10%;
+   /* display: flex;
     margin-left: -34.5%;
     margin-top: 56%;
     font-size: .9em;
-    position: relative;
+    position: relative; */
 }
 
 .lss-icons {
-    position: relative;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin-top: 15%;
+    /* position: relative;
     display: flex;
     margin-top: 180%;
     margin-left: 120%;
-    width: 125%;
+    width: 125%; */
 }
+
 
 
 /* hr line between vid description and one below */
 .line-below-vid {
-    margin-top: 42%;
     display: flex;
     position: relative;
     width: 67%;
@@ -272,8 +324,17 @@ h1 {
 
 
 
+
+
+
+
+
+
+
 /* section below main video descript (orange) */
 .video-description {
+    box-sizing: border-box;
+
     background-color: coral;
     width: 70%;
     display: flex;
@@ -330,6 +391,8 @@ h1 {
 
 
 .comments {
+    box-sizing: border-box;
+
     font-family: roboto, arial;
     display: flex;
     position: relative;
