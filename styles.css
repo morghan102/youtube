@@ -229,12 +229,6 @@ h1 {
 } */
 
 
-
-
-
-
-
-
 /* box w/ video and info */
 .main-video {
      margin-top: -79.65%;
@@ -333,15 +327,27 @@ h1 {
 
 /* section below main video descript (orange) */
 .video-description {
-    box-sizing: border-box;
-
-    background-color: coral;
-    width: 70%;
     display: flex;
-    position: relative;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    /* background-color: coral; */
+    width: 70%;
+    /* position: relative; */
     margin-top: -4%;
     font-family: roboto, arial;
     height: auto;
+}
+
+.ra-brand, .short-description, .show-more {
+    margin-left: 3.5em;
+    flex-direction: column;
+}
+.ra-brand {
+    margin-top: -2.3em;
+    margin-bottom: 1.75em;
+}
+.short-description {
+    margin-bottom: 2em;
 }
 
 /* rounds corners of icon for ra */
@@ -352,41 +358,45 @@ h1 {
 /* what is this? better name */
 .more-logos {
     list-style-type: none;
-    display: flex; 
+    /* display: flex;  */
     
     /* margin-left: -30px; */
 }
 
-.more-logos li {
-    margin-right: 20px;
+/* .more-logos li { */
+    /* margin-right: 20px; */
 /* once the margin is above 30 it gets stacked. NO */
-}
+/* } */
 
 .subscribe-btn {
-    margin-left: 50em;
     background: rgb(204, 7, 7);
     width: 7rem;
     height: 2.5rem;
     color: white;
-    text-emphasis: bold;
+    margin-left: 58em;
+    position: absolute;
+    margin-top: -11em;
 }
 
 .short-description {
-    display: flex;
-    position: relative;
-    margin-left: -16.9%;
-    top: 35%;
+    /* display: flex;
+    position: relative; */
+    /* margin-left: -16.9%;
+    top: 35%; */
     font-size: 15px;
     font-family: roboto, arial;
 }
 
 .show-more {
-    margin-top: 15%;
-    margin-left: -51%;
+    margin-left: 4em;
     color: dark-gray;
 }
 
 /* section below main video descript */
+
+
+
+
 
 
 
