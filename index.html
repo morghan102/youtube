@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="java.js"></script>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        <script src="java.js" defer></script>
         <meta charset="utf-8">
@@ -13,7 +14,7 @@
     <header>
        <nav>
            <ul class="navbar">
-                <li><a href=#three-line-icon class="three-line-icon">
+                <li><a class="active" href="javascript:void(0)" href=#three-line-icon class="three-line-icon">
                     <img src="icons/three-line-icon.png">
                 </a></li>
 
@@ -47,6 +48,7 @@
         right word?) for the searchbox -->
     </header>
 
+    <div class="content">
 <section class="side-box">
     <aside class="sidebar">
             <div class="grid">
@@ -157,20 +159,25 @@
             <li><button type="subscribe" class="subscribe-btn">SUBSCRIBE</button></li>
         </ul> 
     </section>
-
+<hr>
 
     <section class="comments">
-        <h3>#of comments, "sort by"</h3>
+        <div class="top-box">
+            <h5>699,845 Comments</h5>
+            <a href=#sort-by class="sort-by-btn">
+                <img src="icons/sort-by.png" class="sort-by-btn">
+                  </a>
+        </div>
+            <!-- need to change this button -->
         <div class="grid">
-            comments gridded (icon of commenter, date, comment
-            likes, "reply")
             <br>
             <div class="comment-box">
             <label for="example"></label>
             <a class="comm-person-icon" href=#comm-person-icon>
-                    <img src="icons/person-icon.png" alt="icon of user">
+                    <img src="icons/person-icon.png" class="comm-person-icon" alt="icon of user">
                 </a>
-            <input id="example" type="text" name="Ntext" size="20">
+            <input class="input-text" type="text" name="Ntext" placeholder="     Add a public comment..."
+            >
             <!-- <input id="sent" type="submit" value="Send"> -->
             <!-- this works! change id to class...
             add already done comments at end. -->
@@ -187,6 +194,8 @@
         <!-- <p id="para"></p> I NEED THIS??-->
     </div>
     </section>
+
+</div>
 
 </body>
 </html>

@@ -23,6 +23,7 @@ html {
     flex-wrap: wrap;
     margin: 0;
     display: flex;
+    background-color: #f9f9f9;
 }
 
 p {
@@ -43,8 +44,17 @@ header {
     justify-content: space-between;
     margin-left: -30px;
     box-sizing: border-box;
-
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  }
 
 .navbar img {
     height: 30px;
@@ -353,20 +363,13 @@ h1 {
 /* rounds corners of icon for ra */
 .ra-icon {
     border-radius: 25px;
+    margin-left: -1em;
 }
 
 /* what is this? better name */
 .more-logos {
     list-style-type: none;
-    /* display: flex;  */
-    
-    /* margin-left: -30px; */
 }
-
-/* .more-logos li { */
-    /* margin-right: 20px; */
-/* once the margin is above 30 it gets stacked. NO */
-/* } */
 
 .subscribe-btn {
     background: rgb(204, 7, 7);
@@ -379,10 +382,6 @@ h1 {
 }
 
 .short-description {
-    /* display: flex;
-    position: relative; */
-    /* margin-left: -16.9%;
-    top: 35%; */
     font-size: 15px;
     font-family: roboto, arial;
 }
@@ -402,13 +401,26 @@ h1 {
 
 .comments {
     box-sizing: border-box;
-
     font-family: roboto, arial;
     display: flex;
-    position: relative;
-    background-color: darkgray;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* position: relative; */
+    /* background-color: darkgray; */
     width: 70%;
+    margin-left: 2em;
     /* www.freecodecamp.org/forum/t/how-to-make-a-comment-box-in-html-css-javascript-or-jquery/248111/4 */
+}
+
+.comments h5 {
+    /* order: 1; */
+    font-size: 15px;
+    text-emphasis: none;
+}
+
+.top-box {
+    display: flex;
 }
 
 .comment-box {
@@ -417,12 +429,45 @@ h1 {
     margin-left: 2%;
 }
 
+.sort-by-btn {
+    /* order: 2; */
+    margin-top: .6em;
+    width: 6.2em;
+    margin-left: 1em;
+}
+
+.comm-person-icon {
+    /* order: 3; */
+}
+
 .comment-box img {
     height: 30px;
     margin-right: 0;
+    /* order: 4; */
 }
 
 .specific-comment {
+    /* order: 5; */
     border: darkred;
     border-width: 10px;
 }
+
+.input-text {
+    width: 60em;
+    border: none;
+    border-bottom: .5px solid darkgrey;
+    font-size: 14px;
+    background-color: #f9f9f9;
+
+}
+
+.comments .grid {
+    margin-top: 3em;
+    margin-left: -15.7em;
+}
+
+/* .sort-by-btn::after {
+    margin-left: 3em;
+    /* right: 100%; */
+    /* Content: "SORT BY"
+} */ 
