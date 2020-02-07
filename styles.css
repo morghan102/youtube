@@ -395,7 +395,13 @@ h1 {
 
 
 
-
+.line-before-comm {
+    display: flex;
+    position: relative;
+    width: 67%;
+    margin-left: 2%;
+    margin-bottom: 0;
+}
 
 
 
@@ -429,6 +435,13 @@ h1 {
     margin-left: 2%;
 }
 
+.completed-comment-box {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    margin-top: 1em;
+}
+
 .sort-by-btn {
     /* order: 2; */
     margin-top: .6em;
@@ -438,13 +451,15 @@ h1 {
 
 .comm-person-icon {
     /* order: 3; */
+    height: 37px;
+    margin-right: 0;
 }
 
-.comment-box img {
+/* .comment-box img {
     height: 30px;
     margin-right: 0;
     /* order: 4; */
-}
+/* } */ 
 
 .specific-comment {
     /* order: 5; */
@@ -458,12 +473,11 @@ h1 {
     border-bottom: .5px solid darkgrey;
     font-size: 14px;
     background-color: #f9f9f9;
-
 }
 
-.comments .grid {
-    margin-top: 3em;
-    margin-left: -15.7em;
+.grid {
+    /* margin-top: 3em; */
+    margin-left: -1em;
 }
 
 /* .sort-by-btn::after {
@@ -471,3 +485,61 @@ h1 {
     /* right: 100%; */
     /* Content: "SORT BY"
 } */ 
+
+/* .text p {
+    font-size: 14px;
+} */
+
+.comment-name {
+    font: roboto, arial, sans-sarif, noto, YT sans, roboto mono;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.time-of-comment {
+    font-weight: none;
+    color: rgb(117, 117, 117);
+
+}
+
+.comment-content {
+    font: roboto, arial, sans-sarif, noto, YT sans, roboto mono;
+    font-size: 14px;
+    margin-top: 0.75em;
+}
+
+.completed-comment-box button {
+    border: none;
+    background-color: transparent;
+}
+
+.comment-likes img {
+    width: 2em;
+}
+
+/* .after-comment-box button {
+            MAKES IT LIGHT UP WHEN SCROLL OVER
+} */
+
+.comment-likes span {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(94, 94, 94);
+
+}
+
+.dislike span {
+    font-size: 12px;
+    color: rgb(94, 94, 94);
+}
+
+.comment-replies span {
+    font-size: 15px;
+    color: rgb(28, 28, 189);
+    font-weight: bold;
+    font: roboto, arial, sans-sarif, noto, YT sans, roboto mono;
+}
+
+.text {
+    margin-left: .9em;
+}
